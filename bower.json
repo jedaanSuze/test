@@ -1,0 +1,9 @@
+{
+  "name": "react-shell-app",
+  "version": "0.1.0",
+  "dependencies": {
+    "jquery": "2.2.4",
+    "lodash": "^4.17.2",
+    "jquery-ui": "1.12.1"
+  }
+}

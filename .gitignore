@@ -1,0 +1,14 @@
+node_modules/
+client
+src/bower_components/
+src/assets/scripts/third-party/*
+client/styles/css
+.idea/
+dist/
+.sass-cache/
+_MACOSX/
+client/
+testData/
+public/
+build/
+!/server/client

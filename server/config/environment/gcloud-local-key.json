@@ -1,0 +1,15 @@
+/*
+{
+    "type": "service_account",
+    "project_id": "galil-demo-app",
+    "private_key_id": "0bf8e6e9066428f2008cd033dc05de551eb369c6",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC0V7IfYMpqdJkb\nZ3NE2lYdzPMNcpPAq+sFpKuPVWEBJJGuI3Rs6q/DdcGJHLE04qRstVNwBZBG1FQO\nceMUO2xhHYJyWwQ2KdY/8d4EodMZNBgE/Mkm5OzJ/vPw/qmDJzgRtMvIYx+5oqQh\nd+2fEe57MB+GP2h5YiTw6PXXPex4+5IXmKCrQjdNf/rMuicFpfvrGT5eOztMCPxX\nlIXVRCT6/jZ4Gqb/Af2dvPuShXNEav9Qvjb8VyCm+zYEPJUGiu+3x0F5KWNgVvE1\n6GcMT5CE7fKm2swQSWznDnbNunCwl5azM3siMQ1SikZM5ll1nt9N/Mb8aIqbPWj+\nyOYRxZklAgMBAAECggEALRLuFiGe9dSGn+7PRJo9g91Bsk681x8g8pwhtQVl5V86\negeqhb5yh6va32YodEthRTpczFbXpJxVFfcpBlmD0RILFIHjH5Z9UiYlk4rOtDHs\n/vIfZHU7KZFrbwR3Yaxfuy0w8bi0qTUZSLQs0+ErdealOmyGtC/vg7b2GwIDJIlv\nqsGqWisThUKIhBrrfi7DVMH8eVLqcp93mfAtRVumd6cX43/kbOSKRlNh952yeDYu\n72POJ7nTN9UqTikSleWdXX3+7sNTnY1N0q6A7vQK+vrSlar+gd/3gPI3w3VYMbto\nwcnjHsafHOVQqj2A1qSZhIrriGDeI6nXchbJk6sUAQKBgQD18Ko/tbPFS7n9rp2L\nWzGVa4aHpNymj6Z7uKHXIn4tB18a3cjpFBffe35Eryqa+HdEqA83pXeyZJX4llsU\nTQ8lc9CU3iTlm9bamKX95IVkY5z2aQsZHpCbRf1NRZRNugdK3pxj7b0JMq2EVjq4\n52g7zX+aBDwxUgl1Sewv1QNBZQKBgQC7uCIfwiWEsZjDL+/6e/h4sqCiquAdvsr+\nQS21jQ/tRb3/Xi7cCagtV7ttgsYmqTbyRd3cFot9PLNZwllFOeMDqx+teAlEjWj3\nq2H8qy56qiJTEUaZrKqbOgPV3Db1Z2jvagXafgGla9/L6RIapUJTluzTpWWSyqwe\nx9T3Fv1cwQKBgBG9LRpxSakmYCDrElP13OqxGb/45S1iWRi9ZXb19vHagUKX0qD1\nIQ+ugZoEpGcPGtMp6AcUeUC1vpdyiNk7Aaeq5dWG/FRPXDziG77nV7O4955ST0md\nicKZVr7XEO5WR6ZfzhnrEOJz9E4CRjQGBN+jX9vFCG5qQ2JhVZbRn219AoGBAJ/A\ngyHd2ooDjcrGWAcmS32EHtpwawxFW4FnPJwdsSkuyhOyNlTBzyLPX81Blpo+NWmW\n9ckgUpNA/izsDYaxTbXIgsvgtJpncaYcbuZVU9fGRDHHKPsNC5/QjoUIxKix2Yau\nBs87nvEFTc69yc9tRnXWojM3tapn2nTTgTTKltHBAoGAF4T89VNFYR0lnBmCT21o\nQotmZ/mrwCa3ed8T0/KKqqpDrtv02hZTF8azaTyrhp/OMa2tMl5jB6J1z6dFRAhS\nP3tq/EqbKd0vfu5Z4JXBtfKE8pf6Ggb4CBOY/Yww6+TN6InQgNpvdQOEAoFsjC1M\n211NNos8oHE50w0UFkcVpUA=\n-----END PRIVATE KEY-----\n",
+    "client_email": "galil-demo-app@appspot.gserviceaccount.com",
+    "client_id": "111925097982174477202",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://accounts.google.com/o/oauth2/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/galil-demo-app%40appspot.gserviceaccount.com"
+}
+
+*/
