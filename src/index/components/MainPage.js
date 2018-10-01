@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React, {Component} from 'react';
 
-class TextEditor extends Component {
+class MainPage extends Component {
     constructor(props, context) {
         super(props);
         this.state = {
@@ -11,13 +11,13 @@ class TextEditor extends Component {
     }
 
     render() {
-        const theme = this.props.basicTheme;
         return (
             <div>
                Hello Man ...
             </div>
+
         );
     }
 }
 
-export default TextEditor;
+export default MainPage;

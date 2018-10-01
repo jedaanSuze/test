@@ -3,9 +3,14 @@ import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import TextEditor from './components/texteditor';
+import {Provider} from 'react-redux';
+import MainPage from './components/MainPage';
+import createStore from '../common/createstore';
 
+const store = createStore(window.INITIAL_STATE);
 
 ReactDOM.hydrate(
-    <TextEditor/>
+    <Provider store={store}>
+        <MainPage/>
+    </Provider>
     , document.querySelector('#root'));
