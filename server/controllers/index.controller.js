@@ -7,7 +7,7 @@ router.get('/', function (req, res) {
     var isSite = req.query['viewMode'] === "site";
     let appData = constants.appConstantsAsJSON;
     let renderer = viewRender.hasOwnProperty('rootRenderer') ? viewRender['rootRenderer'] : viewRender;
-    const reactComponent = renderer(appData);
+    const reactComponent = renderer(appData,req,res);
     let allData = Object.assign(appData, reactComponent);
     res.render('index', allData);
 

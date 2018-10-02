@@ -5,4 +5,7 @@ const SignUpPage = () =>
         <h1>SignUpPage Page</h1>
     </div>
 
-export default SignUpPage;
+
+export default {
+    component: SignUpPage,
+};

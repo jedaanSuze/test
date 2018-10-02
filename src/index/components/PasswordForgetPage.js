@@ -5,4 +5,6 @@ const PasswordForgetPage = () =>
         <h1>PasswordForget Page</h1>
     </div>
 
-export default PasswordForgetPage;
+export default {
+    component: PasswordForgetPage,
+};

@@ -5,4 +5,6 @@ const SignInPage = () =>
         <h1>SignInPage Page</h1>
     </div>
 
-export default SignInPage;
+export default {
+    component: SignInPage,
+};
