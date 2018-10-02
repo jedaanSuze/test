@@ -1,23 +1,50 @@
 /* eslint-disable */
-import React, {Component} from 'react';
+import React from 'react';
 
-class MainPage extends Component {
-    constructor(props, context) {
-        super(props);
-        this.state = {
+import Navigation from './Navigation';
+import {BrowserRouter as Router, Route,} from 'react-router-dom';
+import LandingPage from './LandingPage';
+import SignUpPage from './SignUpPage';
+import SignInPage from './SignInPage';
+import PasswordForgetPage from './PasswordForgetPage';
+import HomePage from './HomePage';
+import AccountPage from './AccountPage';
 
-        };
+import * as routes from '../constants/routes';
 
-    }
+const MainPage = () =>
+    <Router>
+        <div>
+            <Navigation/>
 
-    render() {
-        return (
-            <div>
-               Hello Man ...
-            </div>
+            <hr/>
 
-        );
-    }
-}
+            <Route
+                exact path={routes.LANDING}
+                component={LandingPage}
+            />
+            <Route
+                exact path={routes.SIGN_UP}
+                component={SignUpPage}
+            />
+            <Route
+                exact path={routes.SIGN_IN}
+                component={SignInPage}
+            />
+            <Route
+                exact path={routes.PASSWORD_FORGET}
+                component={PasswordForgetPage}
+            />
+            <Route
+                exact path={routes.HOME}
+                component={HomePage}
+            />
+            <Route
+                exact path={routes.ACCOUNT}
+                component={AccountPage}
+            />
+        </div>
+    </Router>
+
 
 export default MainPage;
