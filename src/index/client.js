@@ -7,7 +7,7 @@ import {renderRoutes} from 'react-router-config'
 
 import {Provider} from 'react-redux';
 import createStore from '../common/createstore';
-import Routes from './constants/Routs';
+import Routes from './constants/Routes';
 
 const store = createStore(window.INITIAL_STATE);
 

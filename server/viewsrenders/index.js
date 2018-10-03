@@ -8,9 +8,9 @@ import {matchPath} from 'react-router-dom';
 import {renderRoutes} from 'react-router-config'
 import serialize from 'serialize-javascript';
 import createStore from '../../src/common/createstore';
-import Routes  from '../../src/index/constants/Routs';
+import Routes from '../../src/index/constants/Routes';
 
-async function indexRenderer(appData,req,res) {
+async function indexRenderer(appData, req, res) {
 
     const store = createStore(appData || {});
 
@@ -28,10 +28,10 @@ async function indexRenderer(appData,req,res) {
         let content;
 
         // here is where we actually render the html, once we have the required asnyc data
-         content = renderToString( // eslint-disable-line
+        content = renderToString( // eslint-disable-line
             <Provider store={store}>
-                <StaticRouter location={req.url} context={{}}>
-                    {renderRoutes(Routes)}
+                <StaticRouter location={req.path} context={{}}>
+                    <div>{renderRoutes(Routes)}</div>
                 </StaticRouter>
             </Provider>);
 

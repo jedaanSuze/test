@@ -8,38 +8,40 @@ import PasswordForgetPage from "../components/PasswordForgetPage";
 import HomePage from "../components/HomePage";
 import AccountPage from "../components/AccountPage";
 
+import * as routes from '../constants/RoutesConstant';
+
 export default [
     {
         ...App,
         routes: [
             {
                 ...LandingPage,
-                path: '/',
+                path: routes.LANDING,
                 exact: true
             },
             {
                 ...SignUpPage,
-                path: '/signup',
+                path: routes.SIGN_UP,
                 exact: true
             },
             {
                 ...SignInPage,
-                path: '/signin',
+                path: routes.SIGN_IN,
                 exact: true
             },
             {
                 ...PasswordForgetPage,
-                path: '/pw-forget',
+                path: routes.PASSWORD_FORGET,
                 exact: true
             },
             {
                 ...HomePage,
-                path: '/home',
+                path: routes.HOME,
                 exact: true
             },
             {
                 ...AccountPage,
-                path: '/account',
+                path: routes.ACCOUNT,
                 exact: true
             }
         ]
