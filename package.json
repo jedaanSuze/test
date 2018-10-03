@@ -137,6 +137,7 @@
         "prop-types": "^15.6.1",
         "pug": "2.0.0-rc.4",
         "react": "^16.5.1",
+        "react-bootstrap": "^0.32.4",
         "react-dom": "16.0.0",
         "react-helmet": "5.2.0",
         "react-json-editor-ajrm": "^2.5.4",

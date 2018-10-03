@@ -1,16 +1,27 @@
+"use strict";
 import React from 'react';
-import { Link } from 'react-router-dom';
-
+import {Nav, NavItem} from 'react-bootstrap';
 import * as routes from '../constants/RoutesConstant';
 
-const Navigation = () =>
-    <div>
-        <ul>
-            <li><Link to={routes.SIGN_IN}>Sign In</Link></li>
-            <li><Link to={routes.LANDING}>Landing</Link></li>
-            <li><Link to={routes.HOME}>Home</Link></li>
-            <li><Link to={routes.ACCOUNT}>Account</Link></li>
-        </ul>
-    </div>
+const Navigation = () => {
+    return (
+        <div>
+            <Nav bsStyle="pills" activeKey={2}>
+                <NavItem eventKey="1" href={routes.SIGN_IN}>
+                    Sign In
+                </NavItem>
+                <NavItem eventKey="2" href={routes.LANDING}>
+                    Landing
+                </NavItem>
+                <NavItem eventKey="3" href={routes.HOME}>
+                    Home
+                </NavItem>
+                <NavItem eventKey="3" href={routes.ACCOUNT}>
+                    Account
+                </NavItem>
+            </Nav>
+        </div>);
+
+}
 
 export default Navigation;
