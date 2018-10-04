@@ -1,10 +1,24 @@
-import React from 'react';
+"use strict";
+import React, {Component} from 'react';
+import {Link, withRouter} from 'react-router-dom';
 
-const SignUpPage = () =>
-    <div>
-        <h1>SignU Page</h1>
-    </div>;
+import * as routes from '../constants/routes';
+import SignUpForm from "./SignUpForm";
+
+const SignUpPage = ({history}) => {
+
+    return (
+        <div>
+            <h1>SignUp</h1>
+            <SignUpForm history={history}/>
+        </div>
+
+    );
+};
 
 export default {
-    component: SignUpPage,
+    component: withRouter(SignUpPage)
 };
+
+
+

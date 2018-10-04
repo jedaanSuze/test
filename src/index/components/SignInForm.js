@@ -2,7 +2,6 @@
 import React ,{Component} from "react";
 import * as auth from "../../firebase/auth";
 import * as routes from "../constants/RoutesConstant";
-import PasswordForgetPage from "./PasswordForget";
 
 const byPropKey = (propertyName, value) => () => ({
     [propertyName]: value,
