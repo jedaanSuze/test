@@ -1,6 +1,7 @@
 "use strict";
-import React, {Component} from 'react';
+import React from 'react';
 import * as routes from "../constants/RoutesConstant";
+import { Link } from 'react-router-dom';
 
 const SignUpLink = () => {
     return (

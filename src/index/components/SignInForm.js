@@ -1,8 +1,7 @@
 "use strict";
-import {Component} from "react";
+import React ,{Component} from "react";
 import * as auth from "../../firebase/auth";
 import * as routes from "../constants/RoutesConstant";
-import React from "react";
 import PasswordForgetPage from "./PasswordForget";
 
 const byPropKey = (propertyName, value) => () => ({

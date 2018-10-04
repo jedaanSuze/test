@@ -4,7 +4,6 @@ let Router = require('express').Router;
 let router = new Router();
 let viewRender = require('../viewsrenders/index');
 router.get('/', function (req, res) {
-    var isSite = req.query['viewMode'] === "site";
     let appData = constants.appConstantsAsJSON;
     let renderer = viewRender.hasOwnProperty('rootRenderer') ? viewRender['rootRenderer'] : viewRender;
     const reactComponent = renderer(appData,req,res);

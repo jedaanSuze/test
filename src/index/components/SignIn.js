@@ -17,8 +17,7 @@ const SignInPage = ({history}) => {
     );
 };
 
-
-
-
-export default withRouter(SignInPage);
+export default {
+    component:  withRouter(SignInPage)
+};
 
