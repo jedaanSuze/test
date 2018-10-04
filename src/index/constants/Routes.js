@@ -6,9 +6,7 @@ import SignUpPage from "../components/SignUp";
 import SignInPage from "../components/SignIn";
 import PasswordForgetPage from "../components/PasswordForget";
 import AccountPage from "../components/Account";
-
-/*import {HomePage} from "../components/HomePage";*/
-
+import HomePage from "../components/Home";
 import * as routes from '../constants/RoutesConstant';
 
 export default [
@@ -35,11 +33,11 @@ export default [
                 path: routes.PASSWORD_FORGET,
                 exact: true
             },
-            /*{
+            {
                 ...HomePage,
                 path: routes.HOME,
                 exact: true
-            },*/
+            },
             {
                 ...AccountPage,
                 path: routes.ACCOUNT,
