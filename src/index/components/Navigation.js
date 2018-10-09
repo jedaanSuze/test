@@ -1,16 +1,21 @@
 "use strict";
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 import {Nav, NavItem} from 'react-bootstrap';
-import * as routes from '../constants/RoutesConstant';
-import SignOutButton from "./SignOut";
 
-const Navigation = ({authUser }) =>
-        <div>
-            { authUser
-                ? <NavigationAuth />
-                : <NavigationNonAuth />
-            }
-        </div>
+import SignOutButton from './SignOut';
+import * as routes from '../constants/RoutesConstant';
+
+
+const Navigation = ({ authUser }) =>
+    <div>
+        { authUser
+            ? <NavigationAuth />
+            : <NavigationNonAuth />
+        }
+    </div>
+
 const NavigationAuth = () =>
         <div>
             <Nav bsStyle="pills" activeKey={2}>
@@ -30,7 +35,7 @@ const NavigationAuth = () =>
                     <SignOutButton/>
                 </NavItem>
             </Nav>
-        </div>
+        </div>;
 
 const NavigationNonAuth = () =>
     <div>
@@ -48,6 +53,10 @@ const NavigationNonAuth = () =>
                 Account
             </NavItem>
         </Nav>
-    </div>
+    </div>;
 
-export default Navigation;
+const mapStateToProps = (state) => ({
+    authUser: state.sessionState.authUser,
+});
+
+export default connect(mapStateToProps)(Navigation);

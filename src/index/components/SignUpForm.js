@@ -1,7 +1,6 @@
 "use strict";
-import {Component} from "react";
-import React from "react";
-import {auth} from '../../firebase/index';
+import React, {Component} from "react";
+import {auth, db} from '../../firebase/index';
 import * as routes from "../constants/RoutesConstant";
 
 const INITIAL_STATE = {
@@ -32,16 +31,28 @@ class SignUpForm extends Component {
             passwordOne,
         } = this.state;
 
+        const {
+            history,
+        } = this.props;
+
         auth.doCreateUserWithEmailAndPassword(email, passwordOne)
             .then(authUser => {
-                debugger;
-                this.setState({...INITIAL_STATE});
-                history.push(routes.HOME);
+
+                // Create a user in your own accessible Firebase Database too
+                db.doCreateUser(authUser.user.uid, username, email)
+                    .then(() => {
+                        this.setState({...INITIAL_STATE});
+                        history.push(routes.HOME);
+                    })
+                    .catch(error => {
+                        this.setState(byPropKey('error', error));
+                    });
+
             })
             .catch(error => {
                 this.setState(byPropKey('error', error));
             });
-        history.push(routes.HOME);
+
         event.preventDefault();
     }
 

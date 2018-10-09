@@ -7,6 +7,7 @@ import SignInPage from "../components/SignIn";
 import PasswordForgetPage from "../components/PasswordForget";
 import AccountPage from "../components/Account";
 import HomePage from "../components/Home";
+import AdminPage from "../components/Admin";
 import * as routes from '../constants/RoutesConstant';
 
 export default [
@@ -41,6 +42,10 @@ export default [
             {
                 ...AccountPage,
                 path: routes.ACCOUNT,
+                exact: true
+            },{
+                ...AdminPage,
+                path: routes.ADMIN,
                 exact: true
             }
         ]

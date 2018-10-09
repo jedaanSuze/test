@@ -1,5 +1,6 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
+import 'firebase/database';
 
 const devConfig = {
     apiKey: "AIzaSyA5EcFDWRyVRoWRy9tD1zd__FdzU1l39hk",
@@ -10,7 +11,7 @@ const devConfig = {
     messagingSenderId: "468537407720"
 };
 
-var prodConfig = {
+const prodConfig = {
     apiKey: "AIzaSyDuHAgtP28y7KVgknxwvedXVw5dJ2wCJmI",
     authDomain: "testproddb.firebaseapp.com",
     databaseURL: "https://testproddb.firebaseio.com",
@@ -27,8 +28,10 @@ if (!firebase.apps.length) {
     firebase.initializeApp(config);
 }
 
+const db = firebase.database();
 const auth = firebase.auth();
 
 export {
+    db,
     auth,
 };
