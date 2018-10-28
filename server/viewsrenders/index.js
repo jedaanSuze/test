@@ -8,11 +8,11 @@ import {StaticRouter} from 'react-router-dom';
 async function indexRenderer(appData, req, res) {
 
     const store = null
-
+    const context = {};
 
     // here is where we actually render the html, once we have the required asnyc data
     const content = renderToString(
-        <StaticRouter location={req.path} context={{}}>
+        <StaticRouter location={req.url} context={context}>
             <App/>
         </StaticRouter>);
 
