@@ -1,7 +1,7 @@
 import App from './App';
-import Home from './home';
-import LogIn from './login';
-import NotFound from './notfound';
+import Home from './Home';
+import LogIn from './LogIn';
+import NotFound from './NotFound';
 
 // import loadData from './helpers/loaddata';
 

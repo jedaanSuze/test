@@ -1,8 +1,8 @@
 import React from 'react';
 import {Route, Switch, NavLink} from 'react-router-dom';
-import Home from './home';
-import LogIn from './login';
-import NotFound from './notfound';
+import Home from './Home';
+import LogIn from './LogIn';
+import NotFound from './NotFound';
 
 const App = ({route}) => {
     return (
