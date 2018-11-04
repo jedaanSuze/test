@@ -3,6 +3,7 @@ import {Route, Switch, NavLink} from 'react-router-dom';
 import Home from './Home';
 import LogIn from './LogIn';
 import NotFound from './NotFound';
+import Scan from "./Scan";
 
 const App = ({route}) => {
     return (
@@ -14,6 +15,9 @@ const App = ({route}) => {
                 <li>
                     <NavLink to="/login">login</NavLink>
                 </li>
+                <li>
+                    <NavLink to="/scan">scan</NavLink>
+                </li>
             </ul>
 
             <Switch>
@@ -23,6 +27,7 @@ const App = ({route}) => {
                     render={props => <Home name="Alligator.io" {...props} />}
                 />
                 <Route path="/login" component={LogIn}/>
+                <Route path="/scan" component={Scan}/>
                 <Route component={NotFound}/>
             </Switch>
         </div>

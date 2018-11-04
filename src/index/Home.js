@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from "prop-types";
+import QRCode from 'qrcode.react';
 
 class Home extends Component {
     constructor(props, context) {
@@ -11,7 +12,7 @@ class Home extends Component {
 
         return (
             <div>
-                Home ...
+                <QRCode value="jedaan " />
             </div>
         );
 
